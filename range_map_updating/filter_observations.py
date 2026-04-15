@@ -43,8 +43,3 @@ def apply_effort_filters(df):
     # Combine all filters
     mask = base_notna & all_species & protocol_ok & duration_ok & distance_ok
     return df.loc[mask].copy()
-
-
-df = pd.read_csv("Dataset/observational_data/full/bird_3.csv")
-df_filtered = apply_effort_filters(df)
-df_filtered.to_csv("Dataset/observational_data/filtered/bird_3.csv", index=False)
