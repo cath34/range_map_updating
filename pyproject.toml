@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "range-map-updating"
+version = "0.1.0"
+description = "Code for the range map updating project"
+authors = [
+    {name = "catherine",email = "catherine.villeneuve@mila.quebec"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "geopandas (>=1.0.1)",
+    "numpy (>=2.4.4)",
+    "pandas (>=3.0.2)",
+    "rasterio (>=1.4.3)",
+    "scikit-learn (>=1.8.0)",
+    "scipy (>=1.17.1)",
+    "statsmodels (>=0.14.2)"
+]
+license = "MIT"
+license-files = [
+    "LICENSE",
+]
+
+[tool.setuptools]
+packages = ["range_map_updating"]
