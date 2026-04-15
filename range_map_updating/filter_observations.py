@@ -1,6 +1,5 @@
 import pandas as pd
 
-
 def apply_effort_filters(df):
     """
     Applies effort filters to a species observation dataset
