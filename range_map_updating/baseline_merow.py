@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from scipy.ndimage import distance_transform_edt
 import statsmodels.api as sm
-from raster_utils import extract_covariates_from_cells
+from range_map_updating.raster_utils import extract_covariates_from_cells
 from sklearn.linear_model import PoissonRegressor
 
 
